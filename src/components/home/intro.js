@@ -49,5 +49,7 @@ function intro() {
                 </Col>
             </Row>
         </Container>
-    )
+    );
 }
+
+export default intro;
