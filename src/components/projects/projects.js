@@ -13,7 +13,111 @@ function projects() {
             <Container>
                 <div classNameName="grid">
                     <ul id="hexGrid">
-                        <ProjectHex />
+                        <li className="hex">
+                            <ProjectHex
+                                link="link"
+                                imgPath={photos}
+                                title="title"
+                                text="text"
+                            />
+                        </li>
+                        <li className="hex">
+                            <ProjectHex
+                                link="link"
+                                imgPath={photos}
+                                title="title"
+                                text="text"
+                            />
+                        </li>
+                        <li className="hex">
+                            <ProjectHex
+                                link="link"
+                                imgPath={photos}
+                                title="title"
+                                text="text"
+                            />
+                        </li>
+                        <li className="hex">
+                            <ProjectHex
+                                link="link"
+                                imgPath={photos}
+                                title="title"
+                                text="text"
+                            />
+                        </li>
+                        <li className="hex">
+                            <ProjectHex
+                                link="link"
+                                imgPath={photos}
+                                title="title"
+                                text="text"
+                            />
+                        </li>
+                        <li className="hex">
+                            <ProjectHex
+                                link="link"
+                                imgPath={photos}
+                                title="title"
+                                text="text"
+                            />
+                        </li>
+                        <li className="hex">
+                            <ProjectHex
+                                link="link"
+                                imgPath={photos}
+                                title="title"
+                                text="text"
+                            />
+                        </li>
+                        <li className="hex">
+                            <ProjectHex
+                                link="link"
+                                imgPath={photos}
+                                title="title"
+                                text="text"
+                            />
+                        </li>
+                        <li className="hex">
+                            <ProjectHex
+                                link="link"
+                                imgPath={photos}
+                                title="title"
+                                text="text"
+                            />
+                        </li>
+                        <li className="hex">
+                            <ProjectHex
+                                link="link"
+                                imgPath={photos}
+                                title="title"
+                                text="text"
+                            />
+                        </li>
+                        <li className="hex">
+                            <ProjectHex
+                                link="link"
+                                imgPath={photos}
+                                title="title"
+                                text="text"
+                            />
+                        </li>
+                        <li className="hex">
+                            <ProjectHex
+                                link="link"
+                                imgPath={photos}
+                                title="title"
+                                text="text"
+                            />
+                        </li>
+                        <li className="hex">
+                            <ProjectHex
+                                link="link"
+                                imgPath={photos}
+                                title="title"
+                                text="text"
+                            />
+                        </li>
+                        
                     </ul>
                 </div>
             </Container>
