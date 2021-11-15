@@ -44,4 +44,4 @@ function techStack() {
     );
 }
 
-export default techStack;
+export default Tech;

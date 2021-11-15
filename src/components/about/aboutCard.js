@@ -12,6 +12,6 @@ function aboutCard() {
     )
 }
 
-export default aboutCard;
+export default AboutCard;
 
 //create 4 cards to look like canva about mockup

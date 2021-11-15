@@ -31,4 +31,4 @@ function toolStack() {
     );
 }
 
-export default toolStack;
+export default Tools;
