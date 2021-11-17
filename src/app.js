@@ -1,16 +1,17 @@
 import React, { useEffect } from "react";
-import preLoad from "../src/components/pre";
+import PreLoad from "../src/components/pre";
 import Navbar from "./components/navBar";
 import Home from "./components/home/home";
 import About from "./components/about/about";
 import Projects from "./components/projects/projects";
-import footer from "./components/footer";
-import resume from "./components/resume/resume";
+import Footer from "./components/footer";
+import Resume from "./components/resume/resume";
+import Contact  from "./components/contact/contact";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style";
 import "./app";
 import "bootstrap/dist/css/bootstrap.min.css";
-import scrollToTop from "./components/scrollToTop";
+import ScrollToTop from "./components/scrollToTop";
 
 function App() {
     const [load, updateLoad] = useState(true);
@@ -25,10 +26,10 @@ function App() {
 
     return (
         <Router>
-            <Preloader load={load} />
+            <PreLoad load={load} />
             <div className="App" id={load ? "no-scroll" : "scroll"}>
                 <Navbar />
-                <scrollToTop />
+                <ScrollToTop />
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/project" exact component={Projects} />
