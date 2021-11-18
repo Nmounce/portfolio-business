@@ -8,7 +8,7 @@ import {
     AiFillPhone
 } from "react-icons/ai";
 
-function intro() {
+function Intro() {
     return (
         <Container fluid className="home-intro-container" id="intro">
             <div>
@@ -21,7 +21,7 @@ function intro() {
                         <li className="social-icons">
                             <a href="https://www.linkedin.com/in/dominique-nikki-mounce-20327a205/"
                                 target="_blank"
-                                rel="github-link"
+                                rel="noreferrer"
                                 className="icon-colour home-social-icons">
                                 <AiFillGithub />
                             </a>
@@ -29,7 +29,7 @@ function intro() {
                         <li className="social-icons">
                             <a href="https://github.com/Nmounce"
                                 target="_blank"
-                                rel="linkedin-link"
+                                rel="noreferrer"
                                 className="icon-colour home-social-icons">
                                 <AiFillLinkedin />
                             </a>
@@ -37,7 +37,7 @@ function intro() {
                         <li className="social-icons">
                             <a href="mailto:"
                                 target="_blank"
-                                rel="email-link"
+                                rel="noreferrer"
                                 className="icon-colour home-social-icons">
                                 <AiFillMail />
                             </a>
@@ -52,4 +52,4 @@ function intro() {
     );
 }
 
-export default intro;
+export default Intro;

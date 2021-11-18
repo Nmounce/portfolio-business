@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 
 
-function footer() {
+function Footer() {
     let date = new Date();
     let year = date.getFullYear();
     return (
@@ -25,7 +25,7 @@ function footer() {
                         <li className="social-icons">
                             <a href="https://www.linkedin.com/in/dominique-nikki-mounce-20327a205/"
                                 target="_blank"
-                                rel="github-link"
+                                rel="noreferrer"
                                 style={{ color:"white" }}>
                                 <AiFillGithub />
                             </a>
@@ -33,7 +33,7 @@ function footer() {
                         <li className="social-icons">
                             <a href="https://github.com/Nmounce"
                                 target="_blank"
-                                rel="linkedin-link"
+                                rel="noreferrer"
                                 style={{ color:"white" }}>
                                 <AiFillLinkedin />
                             </a>
@@ -41,7 +41,7 @@ function footer() {
                         <li className="social-icons">
                             <a href="mailto:"
                                 target="_blank"
-                                rel="email-link"
+                                rel="noreferrer"
                                 style={{ color:"white" }}>
                                 <AiFillMail />
                             </a>
@@ -56,4 +56,4 @@ function footer() {
     );
 }
 
-export default footer;
+export default Footer;

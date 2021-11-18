@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 
-function addLike() {
+function AddLike() {
     const uri = "https://portfolio-backend.vercel.app/likes/getLikes";
     const postUri = "https://portfolio-backend.vercel.app/updateLikes";
 
@@ -55,4 +55,4 @@ function addLike() {
     );
 }
 
-export default addLike;
+export default AddLike;

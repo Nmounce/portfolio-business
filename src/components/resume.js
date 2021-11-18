@@ -10,7 +10,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 const resumeLink = "https://raw.githubusercontent.com/Nmounce/portfolio-business/main/src/assets/nikkiresume.pdf";
 
-function displayResume() {
+function DisplayResume() {
     const [width, setWidth] = useState(1200);
 
     useEffect(() => {
@@ -43,4 +43,4 @@ function displayResume() {
     );
 }
 
-export default displayResume;
+export default DisplayResume;

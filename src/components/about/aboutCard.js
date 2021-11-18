@@ -2,7 +2,7 @@ import React from 'react';
 import Card from "react-bootstrap/Card";
 
 
-function aboutCard() {
+function AboutCard() {
     return (
         <Card className="quote-card">
             <Card.Body>
@@ -14,6 +14,6 @@ function aboutCard() {
     );
 }
 
-export default aboutCard;
+export default AboutCard;
 
 //create 4 cards to look like canva about mockup

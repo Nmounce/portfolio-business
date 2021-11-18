@@ -1,19 +1,12 @@
 import React from "react";
 import TypeWriter from "typewriter-effect";
 
-function typeWriter() {
+function Type() {
     return (
         <TypeWriter
             options={{
                 strings: [
-                    "full /",
-                    "stack",
-                    "web/",
-                    "development",
-                    "/and",
-                    "design/",
-                    "",
-                    "/NMounce"
+                    "full / stack web/ development /and design/ /NMounce"
                 ],
                 autoStart: true,
                 loop: true,
@@ -23,4 +16,4 @@ function typeWriter() {
     );
 }
 
-export default typeWriter;
+export default Type;

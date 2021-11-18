@@ -1,7 +1,7 @@
 import React from 'react';
 import Particles from "react-tsparticles";
 
-const particle = () => {
+const Particle = () => {
   const particlesInit = (main) => {
     console.log(main);
 
@@ -17,23 +17,24 @@ const particle = () => {
         init={particlesInit}
         loaded={particlesLoaded}
             style={{
-                position: "absolute",
+              position: "absolute",
         width: "100%",
-        height: "100%",
-        backgroundColor: '#0d47a1',
+              height: "100%",
+        backgroundColor: '#1a1b1b',
         backgroundImage: 'url("")',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        backgroundPosition: '50% 50%'}}
+              backgroundPosition: '50% 50%',
+            zIndex:'-1'}}
             options={{
                 background: {
                     color: {
-                    value: '#0d47a1',
+                    value: '#1a1b1b',
                 },
             },
                 fps_limit :60,
                 interactivity: {
-                    detectsOn: "canvas",
+                    detectsOn: "window",
                     events: {
                       onClick: {
                         enable: true,
@@ -99,4 +100,4 @@ const particle = () => {
             );
 };
 
-export default particle;
+export default Particle;

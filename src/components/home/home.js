@@ -1,29 +1,29 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import homeBanner from "../../assets/images/4MHero.png";
+import Logo from "../../assets/images/logo-home.png";
 import Particle from "../particle";
 import Intro from "./intro";
-import TypeWriter from "./type";
+import Type from "./type";
 
-function showHomePage() {
+function ShowHomePage() {
     return (
         <section>
             <Container fluid className="home-container" id="home">
                 <Particle />
-                <Container className="home-content">
+                <Container className='home-content'>
                     <Row>
                         <Col md={7} className="home-header">
-                            <img src={homeBanner} alt="logo" className="img-fluid" />
+                            <img src={Logo} alt="logo" className="img-fluid" />
                         </Col>
-                        <Col md={5} style={{textAlign: "right"}}>
-                            <TypeWriter />
+                        <Col md={3} style={{textAlign: "left"}}>
+                            <Type />
                         </Col>
                     </Row>
-                 </Container>
+                </Container>
             </Container>
             <Intro />
         </section>
     )
 }
 
-export default showHomePage;
+export default ShowHomePage;

@@ -12,9 +12,9 @@ import {
     FaTree
 } from 'react-icons/fa';
 
-function navBar() {
-    const [expand, updateExpanded] = React.useState(false);
-    const [navColor, updateNavBar] =React. useState(false);
+function NavBar() {
+    const [expand, updateExpanded] = useState(false);
+    const [navColor, updateNavBar] = useState(false);
 
     function smoothScroll() {
         if (window.scrollY >= 20) {
@@ -81,4 +81,4 @@ function navBar() {
     );
 }
 
-export default navBar;
+export default NavBar;

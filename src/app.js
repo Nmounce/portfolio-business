@@ -1,4 +1,5 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import './app.css';
 import Preload from "../src/components/pre";
 import Navbar from "./components/navBar";
 import Home from "./components/home/home";
@@ -6,7 +7,7 @@ import About from "./components/about/about";
 import Projects from "./components/projects/projects";
 import Footer from "./components/footer";
 import Resume from "./components/resume";
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 import "./css/about.css";
 import "./css/footer.css";
 import "./css/main.css";
@@ -33,15 +34,14 @@ function App() {
     return (
       <Router>
         <Preload load={load} />
-        <div className="App" id={load ? "no-scroll" : "scroll"}>
-          <Navbar />
-          <ScrollToTop />
-            <Route path="/" exact component={Home} />
-            <Route path="/project" component={Projects} />
-            <Route path="/about" component={About} />
-            <Route path="/resume" component={Resume} />
-          <Footer />
-        </div>
+        {/* <div className="App" id={load ? "no-scroll" : "scroll"}> */}
+        <Navbar />
+        <ScrollToTop />
+        <Home />
+        <About />
+        <Projects />
+        <Resume />
+        <Footer />
       </Router>
     );
   }
