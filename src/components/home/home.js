@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import homeBanner from "../../assets/images/4MHero";
+import homeBanner from "../../assets/images/4MHero.png";
 import Particle from "../particle";
 import Intro from "./intro";
-import TypeWriter from "./typeWriter";
+import TypeWriter from "./type";
 
 function showHomePage() {
     return (

@@ -9,7 +9,7 @@ import {
 } from 'react-icons/si';
 
 
-function toolStack() {
+function Tools() {
     return (
         <Row style={{}}>
             <Col xs={4} md={2} className="tech-icons">

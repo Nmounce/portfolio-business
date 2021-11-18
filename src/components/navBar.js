@@ -10,7 +10,7 @@ import {
     FaMountain,
     FaLocationArrow,
     FaTree
-} from 'react-icons/ai';
+} from 'react-icons/fa';
 
 function navBar() {
     const [expand, updateExpanded] = useState(false);

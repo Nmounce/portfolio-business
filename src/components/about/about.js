@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../particle";
 import AboutCard from "./aboutCard";
-import laptopImg from "../../assets/about.png";
+import aboutImg from "../../assets/images/about.png";
 import Tech from "./tech";
 import Tools from "./tools";
 
@@ -17,7 +17,7 @@ function About() {
                         <AboutCard />
                     </Col>
                     <Col md={5} style={{}} className="about-image">
-                        <img src={laptopImg} alt="about" className="img-fluid" />
+                        <img src={aboutImg} alt="about" className="img-fluid" />
                     </Col>
                 </Row>
                 <h1 className="hex-header"> The
@@ -29,6 +29,7 @@ function About() {
                     <strong className="strong">Tools</strong>
                 </h1>
                 <Tools />
+
             </Container>
         </Container>
     );

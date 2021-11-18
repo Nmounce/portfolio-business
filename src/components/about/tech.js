@@ -7,11 +7,11 @@ import {
     SiBootstrap, SiJquery, SiGraphql, SiPython
 } from "react-icons/si";
 
-function techStack() {
+function Tech() {
     return (
         <Row style={{}}>
             <Col xs={4} md={2} className="tech-icons">
-                <<DiJavascript1 />
+                <DiJavascript1 />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <DiGit />

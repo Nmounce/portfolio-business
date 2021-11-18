@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import Particle from "./particle";
+import Particle from "../particle";
 import ProjectHex from "./projectHex";
 
-import photos from "../..assets/projects/photos";
+// import photos from "../..assets/projects/photos";
 
 function projects() {
     return (

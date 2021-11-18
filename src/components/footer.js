@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import {
     AiFillGithub,
-    AiFillLinkedIn,
+    AiFillLinkedin,
     AiFillMail,
     AiFillPhone
 } from "react-icons/ai";
@@ -35,7 +35,7 @@ function footer() {
                                 target="_blank"
                                 rel="linkedin-link"
                                 style={{ color:"white" }}>
-                                <AiFillLinkedIn />
+                                <AiFillLinkedin />
                             </a>
                         </li>
                         <li className="social-icons">
