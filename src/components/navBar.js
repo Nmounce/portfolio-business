@@ -13,8 +13,8 @@ import {
 } from 'react-icons/fa';
 
 function navBar() {
-    const [expand, updateExpanded] = useState(false);
-    const [navColor, updateNavBar] = useState(false);
+    const [expand, updateExpanded] = React.useState(false);
+    const [navColor, updateNavBar] =React. useState(false);
 
     function smoothScroll() {
         if (window.scrollY >= 20) {

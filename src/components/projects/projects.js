@@ -3,7 +3,7 @@ import { Container, Col, Row } from "react-bootstrap";
 import Particle from "../particle";
 import ProjectHex from "./projectHex";
 
-// import photos from "../..assets/projects/photos";
+import { photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13 } from "../../assets/projects/photo1";
 
 function projects() {
     return (
@@ -16,7 +16,7 @@ function projects() {
                         <li className="hex">
                             <ProjectHex
                                 link="link"
-                                imgPath={photos}
+                                imgPath={photo1}
                                 title="title"
                                 text="text"
                             />
@@ -24,7 +24,7 @@ function projects() {
                         <li className="hex">
                             <ProjectHex
                                 link="link"
-                                imgPath={photos}
+                                imgPath={photo2}
                                 title="title"
                                 text="text"
                             />
@@ -32,7 +32,7 @@ function projects() {
                         <li className="hex">
                             <ProjectHex
                                 link="link"
-                                imgPath={photos}
+                                imgPath={photo3}
                                 title="title"
                                 text="text"
                             />
@@ -40,7 +40,7 @@ function projects() {
                         <li className="hex">
                             <ProjectHex
                                 link="link"
-                                imgPath={photos}
+                                imgPath={photo4}
                                 title="title"
                                 text="text"
                             />
@@ -48,7 +48,7 @@ function projects() {
                         <li className="hex">
                             <ProjectHex
                                 link="link"
-                                imgPath={photos}
+                                imgPath={photo5}
                                 title="title"
                                 text="text"
                             />
@@ -56,7 +56,7 @@ function projects() {
                         <li className="hex">
                             <ProjectHex
                                 link="link"
-                                imgPath={photos}
+                                imgPath={photo6}
                                 title="title"
                                 text="text"
                             />
@@ -64,7 +64,7 @@ function projects() {
                         <li className="hex">
                             <ProjectHex
                                 link="link"
-                                imgPath={photos}
+                                imgPath={photo7}
                                 title="title"
                                 text="text"
                             />
@@ -72,7 +72,7 @@ function projects() {
                         <li className="hex">
                             <ProjectHex
                                 link="link"
-                                imgPath={photos}
+                                imgPath={photo8}
                                 title="title"
                                 text="text"
                             />
@@ -80,7 +80,7 @@ function projects() {
                         <li className="hex">
                             <ProjectHex
                                 link="link"
-                                imgPath={photos}
+                                imgPath={photo9}
                                 title="title"
                                 text="text"
                             />
@@ -88,7 +88,7 @@ function projects() {
                         <li className="hex">
                             <ProjectHex
                                 link="link"
-                                imgPath={photos}
+                                imgPath={photo10}
                                 title="title"
                                 text="text"
                             />
@@ -96,7 +96,7 @@ function projects() {
                         <li className="hex">
                             <ProjectHex
                                 link="link"
-                                imgPath={photos}
+                                imgPath={photo11}
                                 title="title"
                                 text="text"
                             />
@@ -104,7 +104,7 @@ function projects() {
                         <li className="hex">
                             <ProjectHex
                                 link="link"
-                                imgPath={photos}
+                                imgPath={photo12}
                                 title="title"
                                 text="text"
                             />
@@ -112,12 +112,11 @@ function projects() {
                         <li className="hex">
                             <ProjectHex
                                 link="link"
-                                imgPath={photos}
+                                imgPath={photo13}
                                 title="title"
                                 text="text"
                             />
                         </li>
-                        
                     </ul>
                 </div>
             </Container>

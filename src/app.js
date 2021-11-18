@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
-import axios from "axios";
-import PreLoad from "../src/components/pre";
+import React, { useState,useEffect } from "react";
+import Preload from "../src/components/pre";
 import Navbar from "./components/navBar";
 import Home from "./components/home/home";
 import About from "./components/about/about";
@@ -25,27 +24,26 @@ function App() {
     const [load, updateLoad] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            updateLoad(false);
-        }, 1200);
-
-        return () => clearTimeout(timer);
+      const timer = setTimeout(() => {
+        updateLoad(false);
+      }, 1200);
+      return () => clearTimeout(timer);
     }, []);
 
     return (
-        <Router>
-            <PreLoad load={load} />
-            <div className="App" id={load ? "no-scroll" : "scroll"}>
-                <Navbar />
-                <ScrollToTop />
-                    <Route path="/" exact component={Home} />
-                    <Route path="/project" exact component={Projects} />
-                    <Route path="/about" exact component={About} />
-                    <Route path="/resume" exact component={Resume} />
-                <Footer />
-            </div>
-        </Router>
+      <Router>
+        <Preload load={load} />
+        <div className="App" id={load ? "no-scroll" : "scroll"}>
+          <Navbar />
+          <ScrollToTop />
+            <Route path="/" exact component={Home} />
+            <Route path="/project" component={Projects} />
+            <Route path="/about" component={About} />
+            <Route path="/resume" component={Resume} />
+          <Footer />
+        </div>
+      </Router>
     );
-}
-
-export default App;
+  }
+  
+  export default App;
