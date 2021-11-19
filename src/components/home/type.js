@@ -6,7 +6,7 @@ function Type() {
         <TypeWriter
             options={{
                 strings: [
-                    "full / stack web/ development /and design/ /NMounce"
+                    "FULL STACK / WEB DEVELOPMENT / AND DESIGN"
                 ],
                 autoStart: true,
                 loop: true,

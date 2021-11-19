@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
-import Logo from "../../assets/images/logo-home.png";
+import { Container} from "react-bootstrap";
+import Logo from "../../assets/images/logo-transparent.png";
 import Particle from "../particle";
 import Intro from "./intro";
 import Type from "./type";
@@ -11,14 +11,8 @@ function ShowHomePage() {
             <Container fluid className="home-container" id="home">
                 <Particle />
                 <Container className='home-content'>
-                    <Row>
-                        <Col md={7} className="home-header">
-                            <img src={Logo} alt="logo" className="img-fluid" />
-                        </Col>
-                        <Col md={3} style={{textAlign: "left"}}>
-                            <Type />
-                        </Col>
-                    </Row>
+                    <img src={Logo} alt="logo" className="img-fluid" />
+                    <Type />
                 </Container>
             </Container>
             <Intro />

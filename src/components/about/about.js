@@ -9,8 +9,8 @@ import Tools from "./tools";
 function About() {
     return (
         <Container fluid className="about-section" >
-            <Particle />
             <Container>
+            <Particle />
                 <Row style={{ justifyContent: "center", padding: "10px" }}>
                     <Col md={7} style={{}}>
                         <h1>Title goes here <strong className="strong">Other</strong></h1>

@@ -20,7 +20,7 @@ import photo13 from "../../assets/hex-images/photo13.png";
 
 function Projects() {
     return (
-        <Container fluid className="project-container">
+            <Container className="project-container">
             <Particle />
             <h1 className="projects-header" style={{ textAlign: 'center' }}>Take A Look At My Work</h1>
             <div className="grid">

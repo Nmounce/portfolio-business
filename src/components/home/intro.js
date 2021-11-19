@@ -4,19 +4,14 @@ import { Container, Col, Row } from "react-bootstrap";
 import {
     AiFillGithub,
     AiFillLinkedin,
-    AiFillMail,
-    AiFillPhone
+    AiFillMail
 } from "react-icons/ai";
 
 function Intro() {
     return (
-        <Container fluid className="home-intro-container" id="intro">
-            <div>
-                {/* <img src={introImage} className="home-intro-image" alt="company bio"></img> */}
-            </div>
+        <Container fluid className="home-intro-container">
             <Row>
                 <Col md={12} className="home-intro-social">
-                    <h1>Get Connected</h1>
                     <ul className="home-intro-social-links">
                         <li className="social-icons">
                             <a href="https://www.linkedin.com/in/dominique-nikki-mounce-20327a205/"
@@ -35,15 +30,13 @@ function Intro() {
                             </a>
                         </li>
                         <li className="social-icons">
-                            <a href="mailto:"
+                        <a href="mailto:nikkicancode@gmail.com" class="js-track" data-track-action="email submission"
+                    data-track-category="contact"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="icon-colour home-social-icons">
                                 <AiFillMail />
                             </a>
-                        </li>
-                        <li className="social-icons home-social-icons">
-                            <AiFillPhone />
                         </li>
                     </ul>
                 </Col>
