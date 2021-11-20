@@ -6,8 +6,7 @@ function Type() {
         <TypeWriter
             options={{
                 strings: [
-                    "FULL STACK / WEB DEVELOPMENT / AND DESIGN"
-                ],
+                    "FULL STACK / WEB DEVELOPMENT / AND DESIGN"],
                 autoStart: true,
                 loop: true,
                 deleteSpeed: 50,

@@ -1,39 +1,72 @@
-import React from "react";
-import { Container } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Card, Row, Col} from "react-bootstrap";
 import Particle from "../particle";
-import ProjectHex from "./projectHex";
+import { AiFillGithub } from "react-icons/ai";
+import { CgWebsite } from "react-icons/cg";
+import header from "../../assets/images/project-header.png";
+import '../../css/projects.css';
 
-import photo1 from "../../assets/hex-images/photo1.png";
-import photo2 from "../../assets/hex-images/photo2.png";
-import photo3 from "../../assets/hex-images/photo3.png";
-import photo4 from "../../assets/hex-images/photo4.png";
-import photo5 from "../../assets/hex-images/photo5.png";
-import photo6 from "../../assets/hex-images/photo6.png";
-import photo7 from "../../assets/hex-images/photo7.png";
-import photo8 from "../../assets/hex-images/photo8.png";
-import photo9 from "../../assets/hex-images/photo9.png";
-import photo10 from "../../assets/hex-images/photo10.png";
-import photo11 from "../../assets/hex-images/photo11.png";
-import photo12 from "../../assets/hex-images/photo12.png";
-import photo13 from "../../assets/hex-images/photo13.png";
+
+import photo1 from "../../assets/project-images/photo1.png";
+
+
+function useHover() {
+    const [hovering, setHovering] = useState(false)
+    const onHoverProps = {
+        onMouseEnter: () => setHovering(true),
+        onMouseLeave: () => setHovering(false),
+    }
+    return [hovering, onHoverProps]
+    };
 
 
 function Projects() {
+
+    const [linkAIsHovering, linkAHoverProps] = useHover()
+    const [linkBIsHovering, linkBHoverProps] = useHover()
+
     return (
-            <Container className="project-container">
+        <Container className="project-container">
             <Particle />
-            <h1 className="projects-header" style={{ textAlign: 'center' }}>Take A Look At My Work</h1>
-            <div className="grid">
-                <ul id="hexGrid">
-                    <li className="hex">
-                        <ProjectHex
-                            link="link"
-                            imgPath={photo1}
-                            title="title"
-                            text="text"
-                        />
-                    </li>
-                    <li className="hex">
+            <div className="project-section">
+                <img className="project-header" src={header} alt="project header"/>
+                <div className="project-cards">
+                    <Row xs={1} md={3} className="g-4">
+                        {Array.from({ length: 9 }).map((_, idx) => (
+                            <Col>
+                                <Card>
+                                    <Card.Img className="project-image" src={photo1}/>
+                                    <Card.ImgOverlay>
+                                        <Card.Title style={{fontSize: '60px', color: '#bd0d47e7',
+                                        fontFamily: 'Road Rage'}}>Card title</Card.Title>
+                                        <Card.Text>
+                                            This is a longer card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.
+                                        </Card.Text>
+                                        <Card.Text className='sub-text'>
+                                        This app was part of the UC Davis Full Stack Development Coding Bootcamp program assignments.
+                                        </Card.Text>
+                                            <a {...linkAHoverProps} href="https://github.com/Nmounce"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                className="icon-colour home-social-icons">
+                                                <AiFillGithub />
+                                                {linkAIsHovering ? "GitHub Repo" : ""}
+                                            </a>
+                                            <a {...linkBHoverProps} href="https://github.com/Nmounce"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                className="icon-colour home-social-icons">
+                                                <CgWebsite />
+                                                {linkBIsHovering ? "Live Site" : ""}
+                                        </a>
+                                    </Card.ImgOverlay>
+                                </Card>
+                        </Col>
+                    ))}
+                </Row>
+            </div>
+                    {/* <li className="hex">
                         <ProjectHex
                             link="link"
                             imgPath={photo2}
@@ -129,7 +162,7 @@ function Projects() {
                             text="text"
                         />
                     </li>
-                </ul>
+                </ul> */}
             </div>
         </Container>
     );

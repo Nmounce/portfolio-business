@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Container, Col, Row } from "react-bootstrap";
 // import introImage from "../../assets/images/introImage.png";
 import {
@@ -7,14 +7,17 @@ import {
     AiFillMail
 } from "react-icons/ai";
 
+
+
 function Intro() {
+
     return (
         <Container fluid className="home-intro-container">
             <Row>
                 <Col md={12} className="home-intro-social">
                     <ul className="home-intro-social-links">
                         <li className="social-icons">
-                            <a href="https://www.linkedin.com/in/dominique-nikki-mounce-20327a205/"
+                            <a href="https://github.com/Nmounce"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="icon-colour home-social-icons">
@@ -22,7 +25,7 @@ function Intro() {
                             </a>
                         </li>
                         <li className="social-icons">
-                            <a href="https://github.com/Nmounce"
+                            <a href="https://www.linkedin.com/in/dominique-nikki-mounce-20327a205/"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="icon-colour home-social-icons">

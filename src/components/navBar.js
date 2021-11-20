@@ -1,90 +1,72 @@
-import React from 'react';
-import { MDBIcon, MDBSideNavCat, MDBSideNavNav, MDBSideNav, MDBSideNavLink, MDBContainer, MDBRow, MDBBtn } from 'mdbreact';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React, { useState } from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
+// import logo from "../assets/images/4M.png";
+import { Link } from "react-router-dom";
+import {
+    FaHome,
+    FaHandshake,
+    FaMountain,
+    FaLocationArrow,
+    FaTree
+} from 'react-icons/fa';
 
-class NavBar extends React.Component {
-  state = {
-    isOpen: false
-  }
+function useHover() {
+const [hovering, setHovering] = useState(false)
+const onHoverProps = {
+    onMouseEnter: () => setHovering(true),
+    onMouseLeave: () => setHovering(false),
+}
+return [hovering, onHoverProps]
+};
 
-  handleToggle = () => {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  };
+function NavBar() {
+    const [linkAIsHovering, linkAHoverProps] = useHover()
+    const [linkBIsHovering, linkBHoverProps] = useHover()
+    const [linkCIsHovering, linkCHoverProps] = useHover()
+    const [linkDIsHovering, linkDHoverProps] = useHover()
+    const [linkEIsHovering, linkEHoverProps] = useHover()
+    
 
-  render() {
-    const { isOpen } = this.state;
+
     return (
-      <Router>
-        <MDBContainer>
-          <MDBRow>
-            <MDBBtn onClick={this.handleToggle}><MDBIcon icon="bars" size="5x" /></MDBBtn>
-          </MDBRow>
-          <MDBSideNav
-            logo={logo}
-            hidden
-            triggerOpening={isOpen}
-            breakWidth={1300}
-            className="deep-purple darken-4"
-          >
-            <li>
-              <ul className="social">
-                <li>
-                  <a href="#!">
-                    <MDBIcon fab icon="facebook-f" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#!">
-                    <MDBIcon fab icon="pinterest" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#!">
-                    <MDBIcon fab icon="google-plus-g" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#!">
-                    <MDBIcon fab icon="twitter" />
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <MDBSideNavNav>
-              <MDBSideNavCat
-                name="Submit blog"
-                id="submit-blog"
-                icon="chevron-right"
-              >
-                <MDBSideNavLink>Submit listing</MDBSideNavLink>
-                <MDBSideNavLink>Registration form</MDBSideNavLink>
-              </MDBSideNavCat>
-              <MDBSideNavCat
-                name="Instruction"
-                id="instruction"
-                iconRegular
-                icon="hand-pointer"
-                href="#"
-              >
-                <MDBSideNavLink>For bloggers</MDBSideNavLink>
-                <MDBSideNavLink>For authors</MDBSideNavLink>
-              </MDBSideNavCat>
-              <MDBSideNavCat name="About" id="about" icon="eye">
-                <MDBSideNavLink>Instruction</MDBSideNavLink>
-                <MDBSideNavLink>Monthly meetings</MDBSideNavLink>
-              </MDBSideNavCat>
-              <MDBSideNavCat name="Contact me" id="contact-me" iconRegular icon="envelope">
-                <MDBSideNavLink>FAQ</MDBSideNavLink>
-                <MDBSideNavLink>Write a message</MDBSideNavLink>
-              </MDBSideNavCat>
-            </MDBSideNavNav>
-          </MDBSideNav>
-        </MDBContainer>
-      </Router>
+        <Navbar>
+            <Container>
+                <Navbar.Collapse className="responsive-navbar-nav">
+                    <Nav className='ml-auto' defaultActiveKey="#home">
+                        <Navbar.Brand href="/">4th MT/n\*</Navbar.Brand>
+                        <Nav.Item>
+                            <Nav.Link {...linkAHoverProps} as={Link} to="/">
+                                <FaHome style={{ marginBottom: "2px" }} />
+                                {linkAIsHovering ? "HOME" : ""}
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link {...linkBHoverProps} as={Link} to="/about" >
+                                <FaMountain style={{ marginBottom: "2px" }} /> {linkBIsHovering ? "ABOUT" : ""}
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link {...linkCHoverProps} as={Link} to="/projects" >
+                                <FaTree style={{ marginBottom: "2px" }} /> {linkCIsHovering ? "PROJECTS" : ""}
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link {...linkDHoverProps} as={Link} to="/contact" >
+                                <FaLocationArrow style={{ marginBottom: "2px" }} /> {linkDIsHovering ? "CONTACT" : ""}
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link {...linkEHoverProps} as={Link} to="/resume" >
+                                <FaHandshake style={{ marginBottom: "2px" }} /> {linkEIsHovering ? "RESUME" : ""}
+                            </Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
-  }
 }
 
 export default NavBar;

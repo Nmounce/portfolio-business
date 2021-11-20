@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './app.css';
 import Preload from "../src/components/pre";
-// import Navbar from "./components/navBar";
-import NavBar from "../src/components/navBar";
+import Navbar from "./components/navbar";
 import Home from "./components/home/home";
 import About from "./components/about/about";
 import Projects from "./components/projects/projects";
@@ -10,13 +9,13 @@ import Footer from "./components/footer";
 import Resume from "./components/resume";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import "./css/about.css";
+import "./css/social-icons.css";
 import "./css/footer.css";
 import "./css/main.css";
 import "./css/home.css";
 import "./css/index.css";
 import "./css/navbar.css";
 import "./css/preload.css";
-import "./css/projects.css";
 import "./css/resume.css";
 import "./css/scrollbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -36,14 +35,14 @@ function App() {
       <Router>
         <Preload load={load} />
         <div className="App" id={load ? "no-scroll" : "scroll"}>
-          <NavBar />
+          <Navbar />
           {/* <ScrollToTop /> */}
-          <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/About" element={<About />} />
-            <Route path="/Projects" element={<Projects />} />
-            <Route path="/Resume" element={<Resume />} />
-          </Routes>
+            <Routes>
+              <Route path="/" element={<Home />}/>
+              <Route path="/About" element={<About />} />
+              <Route path="/Projects" element={<Projects />} />
+              <Route path="/Resume" element={<Resume />} />
+            </Routes>
           <Footer />
         </div>
       </Router>
