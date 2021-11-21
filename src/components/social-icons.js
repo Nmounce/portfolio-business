@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Col, Row } from "react-bootstrap";
-import '../css/social-icons';
+import {Button} from "react-bootstrap";
+import '../css/social-icons.css';
 import {
     AiFillGithub,
     AiFillLinkedin,
@@ -14,33 +15,15 @@ function SocialIcons() {
         <Container fluid className="home-intro-container">
             <Row>
                 <Col md={12} className="home-intro-social">
-                    <ul className="home-intro-social-links">
-                        <li className="social-icons">
-                            <a href="https://github.com/Nmounce"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="icon-colour social-icons">
-                                <AiFillGithub />
-                            </a>
-                        </li>
-                        <li className="social-icons">
-                            <a href="https://www.linkedin.com/in/dominique-nikki-mounce-20327a205/"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="icon-colour social-icons">
-                                <AiFillLinkedin />
-                            </a>
-                        </li>
-                        <li className="social-icons">
-                        <a href="mailto:nikkicancode@gmail.com" class="js-track" data-track-action="email submission"
-                    data-track-category="contact"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="icon-colour social-icons">
-                                <AiFillMail />
-                            </a>
-                        </li>
-                    </ul>
+                    <Button class="social-icons" variant='primary' href='https://github.com/Nmounce' target='_blank' rel='noreferrer'>
+                        <AiFillGithub />
+                    </Button>
+                    <Button class="social-icons" variant='primary' href='https://www.linkedin.com/in/dominique-nikki-mounce-20327a205/' target='_blank' rel='noreferrer'>
+                        <AiFillLinkedin />
+                    </Button>
+                    <Button class="social-icons js-track" variant='primary' href='mailto:nikkicancode@gmail.com' target='_blank' data-track-action='email submission' data-track-category="contact" rel='noreferrer'>
+                        <AiFillMail />
+                    </Button>
                 </Col>
             </Row>
         </Container>

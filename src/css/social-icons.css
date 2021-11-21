@@ -1,10 +1,4 @@
 /*All */
-.social-icons {
-  display: inline-block !important;
-  padding-left: 15px;
-}
-
-/* Home page */
 
 .social-icons {
   position: relative !important;
@@ -14,9 +8,11 @@
   text-align: center !important;
   font-size: 3em !important;
   line-height: 1em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: rgba(197, 191, 191, 0.972) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
+  color: #75082ce7 !important;
+  margin-left: 1%;
 }
 
 .social-icons::before {
@@ -34,16 +30,9 @@
 
 .social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #d3174f;
+  box-shadow: 0 0 40px #abf128;
 }
 
 .social-icons:hover {
   box-shadow: 0 0 5px #d3174f;
-  text-shadow: 0 0 2px #d3174f;
 }
-
-.icon-colour {
-  color: #75082ce7 !important;
-}
-
-/*Footer */

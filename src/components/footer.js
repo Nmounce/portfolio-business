@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import SocialIcons from '../components/social-icons';
+import SocialIcons from '../components/social-icons.js';
 
 
 function Footer() {

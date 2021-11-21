@@ -10,7 +10,6 @@
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
-  flex-direction: ;
 }
 
 
@@ -27,7 +26,7 @@
 .navbar-brand {
   color: #bd0d47e7 !important;
   text-shadow: 2px 2px rgb(209, 190, 190);
-  font-size: 2em !important;
+  font-size: 2.3em !important;
   font-weight: 700;
   font-family: "Road Rage", cursive;
 }
@@ -35,9 +34,9 @@
 .navbar-nav .nav-link {
   color: rgba(216, 210, 212, 0.726) !important;
   font-family: "Caveat", cursive;
-  padding-right: 0.2rem !important;
-  padding-left: 0.2rem !important;
-  font-size: 1.5rem !important;
+  padding-right: 0.6rem !important;
+  padding-left: 0.6rem !important;
+  font-size: 2rem !important;
 }
 
 .nav-link {
@@ -68,7 +67,7 @@
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #75082ce7;
+  background: #970e3cdc;
   bottom: 1px;
   left: 0;
   z-index: -1;
