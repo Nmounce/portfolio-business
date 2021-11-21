@@ -2,7 +2,7 @@ import React from "react";
 import { Container} from "react-bootstrap";
 import Logo from "../../assets/images/logo-transparent.png";
 import Particle from "../particle";
-import Intro from "./intro";
+import SocialIcons from "../social-icons";
 import Type from "./type";
 
 function ShowHomePage() {
@@ -15,7 +15,7 @@ function ShowHomePage() {
                     <Type />
                 </Container>
             </Container>
-            <Intro />
+            <SocialIcons />
         </section>
     )
 }

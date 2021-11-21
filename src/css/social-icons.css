@@ -6,7 +6,7 @@
 
 /* Home page */
 
-.home-social-icons {
+.social-icons {
   position: relative !important;
   display: inline-block !important;
   width: 60px !important;
@@ -19,7 +19,7 @@
   transition: 0.5s !important;
 }
 
-.home-social-icons::before {
+.social-icons::before {
   content: "";
   position: absolute;
   top: 0;
@@ -32,12 +32,12 @@
   z-index: -1;
 }
 
-.home-social-icons:hover::before {
+.social-icons:hover::before {
   transform: scale(1.1);
   box-shadow: 0 0 15px #d3174f;
 }
 
-.home-social-icons:hover {
+.social-icons:hover {
   box-shadow: 0 0 5px #d3174f;
   text-shadow: 0 0 2px #d3174f;
 }
@@ -47,5 +47,3 @@
 }
 
 /*Footer */
-
-

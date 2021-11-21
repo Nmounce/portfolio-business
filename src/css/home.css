@@ -7,6 +7,10 @@
   z-index: -1;
 }
 
+.home-content{
+  margin-top:-5%;
+}
+
 .home-container {
   position: relative;
   z-index: -1;

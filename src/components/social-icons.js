@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Col, Row } from "react-bootstrap";
-// import introImage from "../../assets/images/introImage.png";
+import '../css/social-icons';
 import {
     AiFillGithub,
     AiFillLinkedin,
@@ -8,8 +8,7 @@ import {
 } from "react-icons/ai";
 
 
-
-function Intro() {
+function SocialIcons() {
 
     return (
         <Container fluid className="home-intro-container">
@@ -20,7 +19,7 @@ function Intro() {
                             <a href="https://github.com/Nmounce"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="icon-colour home-social-icons">
+                                className="icon-colour social-icons">
                                 <AiFillGithub />
                             </a>
                         </li>
@@ -28,7 +27,7 @@ function Intro() {
                             <a href="https://www.linkedin.com/in/dominique-nikki-mounce-20327a205/"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="icon-colour home-social-icons">
+                                className="icon-colour social-icons">
                                 <AiFillLinkedin />
                             </a>
                         </li>
@@ -37,7 +36,7 @@ function Intro() {
                     data-track-category="contact"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="icon-colour home-social-icons">
+                                className="icon-colour social-icons">
                                 <AiFillMail />
                             </a>
                         </li>
@@ -48,4 +47,4 @@ function Intro() {
     );
 }
 
-export default Intro;
+export default SocialIcons;
