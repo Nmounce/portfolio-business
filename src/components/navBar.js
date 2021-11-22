@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
-// import logo from "../assets/images/4M.png";
 import { Link } from "react-router-dom";
+import '../css/navbar.css';
 import {
     FaHome,
     FaHandshake,
@@ -27,44 +26,38 @@ function NavBar() {
     const [linkCIsHovering, linkCHoverProps] = useHover()
     const [linkDIsHovering, linkDHoverProps] = useHover()
     const [linkEIsHovering, linkEHoverProps] = useHover()
-    
-
 
     return (
-        <Navbar>
-            <Container>
-                <Navbar.Collapse className="responsive-navbar-nav">
-                    <Nav className='ml-auto' defaultActiveKey="#home">
-                        <Navbar.Brand href="/">4th MT/n\*</Navbar.Brand>
-                        <Nav.Item>
-                            <Nav.Link {...linkAHoverProps} as={Link} to="/">
-                                <FaHome style={{ marginBottom: "2px" }} />
-                                {linkAIsHovering ? "HOME" : ""}
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link {...linkBHoverProps} as={Link} to="/about" >
-                                <FaMountain style={{ marginBottom: "2px" }} /> {linkBIsHovering ? "ABOUT" : ""}
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link {...linkCHoverProps} as={Link} to="/projects" >
-                                <FaTree style={{ marginBottom: "2px" }} /> {linkCIsHovering ? "PROJECTS" : ""}
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link {...linkDHoverProps} as={Link} to="/contact" >
-                                <FaLocationArrow style={{ marginBottom: "2px" }} /> {linkDIsHovering ? "CONTACT" : ""}
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link {...linkEHoverProps} as={Link} to="/resume" >
-                                <FaHandshake style={{ marginBottom: "2px" }} /> {linkEIsHovering ? "RESUME" : ""}
-                            </Nav.Link>
-                        </Nav.Item>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
+        <Navbar className="responsive-navbar-nav">
+            <Nav className='ml-auto' defaultActiveKey="#home">
+                <Navbar.Brand href="/">4th MT/n\*</Navbar.Brand>
+                <Nav.Item>
+                    <Nav.Link {...linkAHoverProps} as={Link} to="/">
+                        <FaHome style={{ marginBottom: "2px" }} />
+                        {linkAIsHovering ? "HOME" : ""}
+                    </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link {...linkBHoverProps} as={Link} to="/about" >
+                        <FaMountain style={{ marginBottom: "2px" }} /> {linkBIsHovering ? "ABOUT" : ""}
+                    </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link {...linkCHoverProps} as={Link} to="/projects" >
+                        <FaTree style={{ marginBottom: "2px" }} /> {linkCIsHovering ? "PROJECTS" : ""}
+                    </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link {...linkDHoverProps} as={Link} to="/contact" >
+                        <FaLocationArrow style={{ marginBottom: "2px" }} /> {linkDIsHovering ? "CONTACT" : ""}
+                    </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link {...linkEHoverProps} as={Link} to="/resume" >
+                        <FaHandshake style={{ marginBottom: "2px" }} /> {linkEIsHovering ? "RESUME" : ""}
+                    </Nav.Link>
+                </Nav.Item>
+            </Nav>
         </Navbar>
     );
 }
