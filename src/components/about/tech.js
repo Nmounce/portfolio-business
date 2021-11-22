@@ -9,36 +9,46 @@ import {
 
 function Tech() {
     return (
-        <Row style={{}}>
+        <Row style={{marginTop:'-15%', marginLeft:'5%'}}>
             <Col xs={4} md={2} className="tech-icons">
                 <DiJavascript1 />
+                <p style={{fontSize:'16px'}}>Javascript</p>
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <DiGit />
+                <p style={{fontSize:'16px'}}>Git</p>
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                < SiPython/>
+                < SiPython />
+                <p style={{fontSize:'16px'}}>Python</p>
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                < DiMongodb/>
+                < DiMongodb />
+                <p style={{fontSize:'16px'}}>MongoDB</p>
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                < SiJquery/>
+                < SiJquery />
+                <p style={{fontSize:'16px'}}>JQuery</p>
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <DiReact />
+                <p style={{fontSize:'16px'}}>React</p>
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <SiBootstrap />
+                <p style={{fontSize:'16px'}}>Bootstrap</p>
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <DiNodejs />
+                <p style={{fontSize:'16px'}}>Node</p>
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <DiMysql />
+                <p style={{fontSize:'16px'}}>MySQL</p>
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <SiGraphql />
+                <p style={{fontSize:'16px'}}>GraphSQL</p>
             </Col>
         </Row>
     );

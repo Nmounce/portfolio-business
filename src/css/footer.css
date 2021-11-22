@@ -2,17 +2,10 @@
   position: relative;
     background-color:#49413578;
     bottom: 0 !important;
-    padding-top: 10px !important;
-    padding-bottom: 8px !important ;
   }
 
   .footer-body {
     text-align: center !important;
-  }
-
-  .footer-name {
-    font-family: 'Road Rage', cursive;
-    font-size: 28px;
   }
 
   @media (max-width: 767px) {
@@ -21,9 +14,9 @@
     }
   }
 
-  .footer h3 {
+  h3 {
     font-size: 1em;
     color: white !important;
-    margin-top: 0.5em !important;
+    margin-top: 2.5em !important;
     margin-bottom: 0.5em !important;
   }

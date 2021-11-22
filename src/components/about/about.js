@@ -1,37 +1,25 @@
 import React from 'react';
-import { Container, Row, Col } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import Particle from "../particle";
-import AboutCard from "./aboutCard";
 import aboutImg from "../../assets/images/about.png";
+import techImage from "../../assets/images/tech-header.png";
+import toolsImage from "../../assets/images/tools-header.png";
 import Tech from "./tech";
 import Tools from "./tools";
+import '../../css/about.css';
 
 function About() {
     return (
-        <Container fluid className="about-section" >
-            <Container>
+        <div className="about-section" >
             <Particle />
-                <Row style={{ justifyContent: "center", padding: "10px" }}>
-                    <Col md={7} style={{}}>
-                        <h1>Title goes here <strong className="strong">Other</strong></h1>
-                        <AboutCard />
-                    </Col>
-                    <Col md={5} style={{}} className="about-image">
-                        <img src={aboutImg} alt="about" className="img-fluid" />
-                    </Col>
-                </Row>
-                <h1 className="hex-header"> The
-                    <strong className="strong">Skills</strong>
-                </h1>
-                <Tech />
-
-                <h1 className="hex-header"> The
-                    <strong className="strong">Tools</strong>
-                </h1>
-                <Tools />
-
+            <Container fluid>
+                <img src={aboutImg} alt="about" className="about-image" />
+                <img src={techImage} alt="the tech" className="tHeaders" />
+                    <Tech className="tBoxes"/>
+                <img src={toolsImage} alt="the tools" className="tHeaders" />
+                    <Tools className="tBoxes"/>
             </Container>
-        </Container>
+        </div>
     );
 }
 

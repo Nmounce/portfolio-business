@@ -11,21 +11,26 @@ import {
 
 function Tools() {
     return (
-        <Row style={{}}>
+        <Row style={{marginTop:'-15%', marginLeft:'5%', marginBottom:'5%'}}>
             <Col xs={4} md={2} className="tech-icons">
                 <SiVisualstudiocode />
+                <p style={{fontSize:'16px'}}>Visual Studio Code</p>
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <SiHeroku />
+                <p style={{fontSize:'16px'}}>Heroku</p>
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                < SiInsomnia/>
+                < SiInsomnia />
+                <p style={{fontSize:'16px'}}>Insomnia</p>
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                < SiCodepen/>
+                < SiCodepen />
+                <p style={{fontSize:'16px'}}>CodePen</p>
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                < SiCanva/>
+                < SiCanva />
+                <p style={{fontSize:'16px'}}>Canva</p>
             </Col>
         </Row>
     );
