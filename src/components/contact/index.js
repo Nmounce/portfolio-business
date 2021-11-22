@@ -37,20 +37,31 @@ router.post('/send', (req, res, next) => {
   }
 
   transporter.sendMail(mail, (err, data) => {
-    if (err) {
-      res.json({
-        status: 'fail'
-      })
-    } else {
-      res.json({
-       status: 'success'
-      })
-    }
-  })
+      if (err) {
+          res.json({
+              status: 'fail'
+          })
+      } else {
+          res.json({
+              status: 'success'
+          })
+          transporter.sendMail({
+              from: "<your email address>",
+              to: email,
+              subject: `Your Email to 'Fourth Mountain' has been sent!`,
+              text: `Thank you for contacting us!\n\nForm details\nName: ${name}\n Email: ${email}\n Message: ${message}. We will respond shortly!`
+          }, function (error, info) {
+              if (error) {
+                  console.log(error);
+              } else {
+                  console.log('Message sent: ' + info.response);
+              }
+          });
+      }
 })
 
 const app = express()
 app.use(cors())
 app.use(express.json())
 app.use('/', router)
-app.listen(3002)
+app.listen(3002);

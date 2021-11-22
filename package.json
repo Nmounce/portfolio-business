@@ -48,5 +48,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "https://github.com/matteobruni/tsparticles https://github.com/soumyajit4419/Portfolio",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nmounce/portfolio-business.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nmounce/portfolio-business/issues"
+  },
+  "homepage": "https://github.com/Nmounce/portfolio-business#readme"
 }
